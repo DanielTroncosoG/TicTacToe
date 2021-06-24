@@ -88,7 +88,11 @@ class App extends Component {
 		if (rightDiag.match(/xxx|ooo/)) {
 			this.setState(this.state.turn);
 			return;
-		}
+        }
+        let moves = this.state.gameBoard.join(' ').replace(/ /g, ' ');
+        if (moves.length === 9) {
+            this.setState({winner: 'd'})
+        }
 	}
 
 	resetBoard() {
