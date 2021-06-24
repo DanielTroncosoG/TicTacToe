@@ -1,0 +1,13 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+.tile {
+    width: 30%;
+    height: 150px;
+    font-size: 60px;
+    background: black;
+    border: 8px solid grey;
+    display: inline-block;
+    text-align: center;
+    line-height: 150px;
+
+}
